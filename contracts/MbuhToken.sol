@@ -7,6 +7,19 @@ import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
 import './interfaces/IMbuhToken.sol';
+import "./libs/IBEP20.sol";
+import "./libs/TransferHelper.sol";
+import "./interfaces/IWETH.sol";
+import "./interfaces/IUniswapRouter.sol";
+import "./interfaces/IUniswapFactory.sol";
+import "./interfaces/IUniswapPair.sol";
+// import "./interfaces/IGoldenTreePool.sol";
+// import "./interfaces/ISmartArmy.sol";
+// import "./interfaces/ISmartLadder.sol";
+import "./interfaces/ISmartFarm.sol";
+import "./interfaces/ISmartComp.sol";
+// import "./interfaces/ISmartNobilityAchievement.sol";
+// import "./interfaces/ISmartOtherAchievement.sol";
 
 contract contract MbuhToken is
     IBEP20,
